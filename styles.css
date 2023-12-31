@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+button {
+  border: none;
+  background: transparent;
+}
+
+#main {
+  min-height: 90vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: bisque;
+}
+
+.main-section {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  height: 90vh;
+}
+#random-img {
+  position: absolute;
+  bottom: 40px;
+  background-color: black;
+  padding: 20px;
+  color: #fafafa;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.links-container button {
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fafafa;
+}
+.links-container {
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding: 20px;
+  border: solid 1px #222;
+  border-radius: 10px;
+}
+.links-container #links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.time {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+#clock {
+  font-size: 36px;
+}
+.title {
+  height: 70px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.title #editableTitle {
+  font-size: 36px;
+}
+
+.middle-section {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.weather-section {
+  padding: 30px;
+}
+
+.search-btn {
+  background-color: black;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #fafafa;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}

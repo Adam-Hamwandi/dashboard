@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main id="main">
+      <section class="main-section">
+        <div class="time">
+          <div id="clock"></div>
+        </div>
+        <div class="title">
+          <h1 id="editableTitle" onclick="makeEditable(this)">Change Title</h1>
+        </div>
+
+        <section class="middle-section">
+          <div class="links-container">
+            <div id="links"></div>
+            <div class="btns">
+              <button onclick="addLink()">Add Links</button>
+              <button onclick="removeLastLink()">Delete Last Link</button>
+            </div>
+          </div>
+
+          <!-- Väder delen-->
+          <div class="weather-section">
+            <div class="weather-content">
+              <label for="locationInput">Search your city</label>
+              <input type="text" id="locationInput" />
+              <button class="search-btn" onclick="searchWeather()">Search</button>
+            </div>
+            <div id="weather"></div>
+          </div>
+          <!--Weather ends-->
+          <!--<div id="extraSection"></div>-->
+          <div class="text-area">
+            <h3 class="text-area-heading">Anteckningar</h3>
+            <textarea
+              id="notes"
+              placeholder="Skriv dina anteckningar här"
+            ></textarea>
+          </div>
+        </section>
+        <button id="random-img" onclick="getRandomImage()">
+          Randomize Background
+        </button>
+      </section>
+    </main>
+    <script src="/script/script.js"></script>
+  </body>
+</html>
